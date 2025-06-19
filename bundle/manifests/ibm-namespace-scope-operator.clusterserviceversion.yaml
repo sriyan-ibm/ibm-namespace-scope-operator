@@ -22,7 +22,7 @@ metadata:
         }
       ]
     capabilities: Seamless Upgrades
-    containerImage: icr.io/cpopen/ibm-namespace-scope-operator:4.2.13
+    containerImage: icr.io/cpopen/ibm-namespace-scope-operator@sha256:cbafe648ebb0bdc0f5111093cdaaa7a2c6b506e09e0fee3566b5f979d8ba87df
     createdAt: "2025-02-19T00:54:24Z"
     features.operators.openshift.io/disconnected: "true"
     features.operators.openshift.io/fips-compliant: "true"
@@ -131,7 +131,7 @@ spec:
                           fieldRef:
                             apiVersion: v1
                             fieldPath: metadata.namespace
-                    image: icr.io/cpopen/ibm-namespace-scope-operator:4.2.13
+                    image: icr.io/cpopen/ibm-namespace-scope-operator@sha256:cbafe648ebb0bdc0f5111093cdaaa7a2c6b506e09e0fee3566b5f979d8ba87df
                     imagePullPolicy: IfNotPresent
                     name: ibm-namespace-scope-operator
                     resources:
@@ -253,5 +253,5 @@ spec:
     name: IBM
   version: 4.2.13
   relatedImages:
-    - image: icr.io/cpopen/ibm-namespace-scope-operator:4.2.13
+    - image: icr.io/cpopen/ibm-namespace-scope-operator@sha256:cbafe648ebb0bdc0f5111093cdaaa7a2c6b506e09e0fee3566b5f979d8ba87df
       name: IBM_NAMESPACE_SCOPE_OPERATOR_IMAGE
