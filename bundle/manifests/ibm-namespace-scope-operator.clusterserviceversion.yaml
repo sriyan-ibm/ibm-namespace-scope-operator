@@ -22,7 +22,7 @@ metadata:
         }
       ]
     capabilities: Seamless Upgrades
-    containerImage: icr.io/cpopen/ibm-namespace-scope-operator@sha256:cbafe648ebb0bdc0f5111093cdaaa7a2c6b506e09e0fee3566b5f979d8ba87df
+    containerImage: icr.io/cpopen/ibm-namespace-scope-operator@sha256:c2246cd957294ce09d20c10a357fbcff5e3d8396eba15feb7fe73c45dc4f7506
     createdAt: "2025-02-19T00:54:24Z"
     features.operators.openshift.io/disconnected: "true"
     features.operators.openshift.io/fips-compliant: "true"
@@ -31,7 +31,7 @@ metadata:
     features.operators.openshift.io/token-auth-aws: "false"
     features.operators.openshift.io/token-auth-azure: "false"
     features.operators.openshift.io/token-auth-gcp: "false"
-    olm.skipRange: <4.2.13
+    olm.skipRange: <4.2.14
     operators.openshift.io/infrastructure-features: '["disconnected"]'
     operators.operatorframework.io/builder: operator-sdk-v1.32.0
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v2
@@ -42,7 +42,7 @@ metadata:
     operatorframework.io/arch.ppc64le: supported
     operatorframework.io/arch.s390x: supported
     operatorframework.io/os.linux: supported
-  name: ibm-namespace-scope-operator.v4.2.13
+  name: ibm-namespace-scope-operator.v4.2.14
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -131,7 +131,7 @@ spec:
                           fieldRef:
                             apiVersion: v1
                             fieldPath: metadata.namespace
-                    image: icr.io/cpopen/ibm-namespace-scope-operator@sha256:cbafe648ebb0bdc0f5111093cdaaa7a2c6b506e09e0fee3566b5f979d8ba87df
+                    image: icr.io/cpopen/ibm-namespace-scope-operator@sha256:c2246cd957294ce09d20c10a357fbcff5e3d8396eba15feb7fe73c45dc4f7506
                     imagePullPolicy: IfNotPresent
                     name: ibm-namespace-scope-operator
                     resources:
@@ -251,7 +251,7 @@ spec:
   minKubeVersion: 1.19.0
   provider:
     name: IBM
-  version: 4.2.13
+  version: 4.2.14
   relatedImages:
-    - image: icr.io/cpopen/ibm-namespace-scope-operator@sha256:cbafe648ebb0bdc0f5111093cdaaa7a2c6b506e09e0fee3566b5f979d8ba87df
+    - image: icr.io/cpopen/ibm-namespace-scope-operator@sha256:c2246cd957294ce09d20c10a357fbcff5e3d8396eba15feb7fe73c45dc4f7506
       name: IBM_NAMESPACE_SCOPE_OPERATOR_IMAGE
